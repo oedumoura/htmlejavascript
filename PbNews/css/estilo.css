@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+body {
+    color: black ;
+    background-color: white;
+    /* background-image: url(imagens/rectangles-647267_960_720.webp);*/
+     
+}
+p{
+    text-align: justify; 
+    text-indent: 50px; 
+}
+
+/* Formatando img com legenda*/
+
+figure.foto-legenda {
+    max-width: 200px;
+    position: relative;
+    border: 8px solid black;
+    box-shadow: 1px 1px 4px black;
+     /*setou para tudo*/
+}
+
+figure.foto-legenda img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: blue;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+
+}
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+/* fORMATAR O MENU*/
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 700px;
+    
+
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: silver;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+nav#menu li:hover {
+    background-color: slategray;
+}
+nav#menu h1 {
+    display: none;  
+}
+
+nav#menu a{
+    color: black;
+    text-decoration: none;  
+}
+nav#menu a:hover{
+    color: white;
+    text-decoration: underline;
+
+}
+
+div#interface {
+    width: 900px;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0x 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 1100px;
+    top: 40px;  
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background-image: url(../imagens/back.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 120px;
+}
+
+header#cabecalho h1{
+    font-family: Arial, sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+header#cabecalho h2{
+    font-family: Arial, sans-serif;
+    font-size: 15pt;
+    color: #888888; 
+    padding: 0px;
+    margin-top: 0px;
+}
